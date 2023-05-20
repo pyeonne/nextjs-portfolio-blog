@@ -2850,6 +2850,7 @@ __metadata:
     prettier-plugin-tailwindcss: "npm:^0.3.0"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
+    remixicon: "npm:^3.2.0"
     tailwindcss: "npm:3.3.2"
     typescript: "npm:5.0.4"
   languageName: unknown
@@ -3466,6 +3467,13 @@ __metadata:
     define-properties: "npm:^1.2.0"
     functions-have-names: "npm:^1.2.3"
   checksum: 27e06f7238805b9b315bb43ef60500345cd3c041c9ba2f6b2b7951bd23409314d22741a100e2ce4c6b996d5488dfdc59776486f51f07fef2c2bd36b01dde1092
+  languageName: node
+  linkType: hard
+
+"remixicon@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "remixicon@npm:3.2.0"
+  checksum: 7d8132582a7dffea4b8bd1a45a6cf09a25d70853be1d1fd19a4edbb82c5881dfe0d7729fa9fc93764ffbb13ffddb824fd2381b085684272fe14eb9c45421f02d
   languageName: node
   linkType: hard
 
