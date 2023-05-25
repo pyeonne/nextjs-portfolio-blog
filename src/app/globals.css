@@ -1,14 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 /*=============== TAILWIND CSS ===============*/
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-html,
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -35,29 +32,22 @@ html,
   );
   --title-color: hsl(0, 0%, 12%);
   --text-color: hsl(0, 0%, 50%);
-  --white-color: #fff;
   --body-color: hsl(0, 0%, 96%);
   --container-color: hsl(0, 0%, 100%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Poppins", sans-serif;
-  --second-font: "Montserrat", sans-serif;
-  --bigger-font-size: 2.25rem;
-  --big-font-size: 1.5rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
-
-  /*========== Font weight ==========*/
-  --font-regular: 400;
-  --font-medium: 500;
-  --font-semi-bold: 600;
+  --biggest-font-size: 3rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.688rem;
 
   /*========== z index ==========*/
+  --z-normal: 1;
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -78,53 +68,56 @@ html,
 }
 
 /*=============== BASE ===============*/
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+@layer base {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  html {
+    scroll-behavior: smooth;
+    @apply font-[var(--font-poppins)];
+  }
 
-input,
-button,
-body {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-}
+  input,
+  button,
+  body {
+    font-size: var(--normal-font-size);
+  }
 
-body {
-  background-color: var(--body-color);
-  color: var(--text-color);
-  transition: background 0.4s; /* for dark mode animation */
-}
+  body {
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    transition: background 0.4s; /* for dark mode animation */
+  }
 
-input,
-button {
-  border: none;
-  outline: none;
-}
+  input,
+  button {
+    border: none;
+    outline: none;
+  }
 
-h1,
-h2,
-h3,
-h4 {
-  @apply font-second font-semibold text-[var(--title-color)];
-}
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-title font-semibold text-[var(--title-color)];
+  }
 
-ul {
-  list-style: none;
-}
+  ul {
+    list-style: none;
+  }
 
-a {
-  text-decoration: none;
-}
+  a {
+    text-decoration: none;
+  }
 
-img {
-  max-width: 100%;
-  height: auto;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /*=============== THEME ===============*/
@@ -138,23 +131,40 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1120px;
+  max-width: 1024px;
   margin-inline: 1.5rem;
   width: auto;
 }
 
 .section {
-  padding-block: 5rem 1rem;
+  padding-block: 2.5rem;
 }
 
-.section__title {
-  font-size: var(--big-font-size);
-  margin-bottom: 1.5rem;
+.section__border {
+  border-bottom: 1px solid var(--title-color);
+  padding-bottom: 3.5rem;
+}
+
+.section__title,
+.section__subtitle {
   text-align: center;
 }
 
+.section__title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 0.25rem;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  margin-bottom: 3rem;
+}
+
 .main {
-  overflow: hidden; /* For animation ScrollReveal */
+  overflow: hidden; /* For animation */
 }
 
 /* Show menu */
@@ -163,9 +173,20 @@ img {
 
 /* Active link */
 
-/*=============== HOME ===============*/
-
 /*=============== BUTTON ===============*/
+.button {
+  background: var(--third-gradient);
+  @apply inline-block rounded-full px-[1.8rem] py-3 text-white;
+}
+
+.button,
+.button__link {
+  @apply font-medium;
+}
+
+.button__link {
+  @apply flex items-center gap-x-1;
+}
 
 /*=============== POPULAR ===============*/
 
