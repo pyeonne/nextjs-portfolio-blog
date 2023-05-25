@@ -1,4 +1,4 @@
-import { Button } from "../button";
+import { Button } from "../@common/button";
 import CloseIcon from "../icons/close_icon";
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
 export default function CloseButton({ iconSize, onPressed, classes }: Props) {
   return (
     <Button size="fit" rounded="full" onPressed={onPressed} classes={classes}>
-      <CloseIcon fill={"var(--title-color)"} filled size={iconSize} />
+      <CloseIcon fill={"var(--title-color)"} size={iconSize} />
     </Button>
   );
 }

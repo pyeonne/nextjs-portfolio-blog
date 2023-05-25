@@ -1,6 +1,6 @@
 type Props = {
   fill?: string;
-  filled: boolean;
+  filled?: boolean;
   size?: number;
   width?: number;
   height?: number;
@@ -18,8 +18,8 @@ export default function MenuIcon({
     <svg
       width={size || width || 24}
       height={size || height || 24}
+      fill={fill}
       viewBox="0 0 24 24"
-      fill={filled ? fill : "none"}
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >

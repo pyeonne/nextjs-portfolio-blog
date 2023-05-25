@@ -10,10 +10,13 @@ module.exports = withTV({
   theme: {
     extend: {
       fontFamily: {
+        body: "var(--font-poppins)",
         title: "var(--font-montserrat)",
       },
       fontSize: {
         smaller: "var(--smaller-font-size)",
+        biggest: "var(--biggest-font-size)",
+        h1: "var(--h1-font-size)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -34,6 +37,9 @@ module.exports = withTV({
       },
       transitionDuration: {
         400: "400ms",
+      },
+      rotate: {
+        15: "15deg",
       },
       borderWidth: {
         6: "6px",
