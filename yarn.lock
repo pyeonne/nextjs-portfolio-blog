@@ -836,7 +836,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:^3.5.3":
+"chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.5.3":
   version: 3.5.3
   resolution: "chokidar@npm:3.5.3"
   dependencies:
@@ -2043,6 +2043,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"immutable@npm:^4.0.0":
+  version: 4.3.0
+  resolution: "immutable@npm:4.3.0"
+  checksum: 4fcd15a9b7d623e99cbb992f66ea1171218c1c0b2711dbe54a07588d1236c3fc768e47d75313799e9c6b4073bca70e973d57aba8b5c890bc6b22515b0da67e45
+  languageName: node
+  linkType: hard
+
 "import-fresh@npm:^3.0.0, import-fresh@npm:^3.2.1":
   version: 3.3.0
   resolution: "import-fresh@npm:3.3.0"
@@ -2852,6 +2859,8 @@ __metadata:
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     remixicon: "npm:^3.2.0"
+    sass: "npm:^1.62.1"
+    tailwind-variants: "npm:^0.1.5"
     tailwindcss: "npm:3.3.2"
     typescript: "npm:5.0.4"
   languageName: unknown
@@ -3605,6 +3614,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sass@npm:^1.62.1":
+  version: 1.62.1
+  resolution: "sass@npm:1.62.1"
+  dependencies:
+    chokidar: "npm:>=3.0.0 <4.0.0"
+    immutable: "npm:^4.0.0"
+    source-map-js: "npm:>=0.6.2 <2.0.0"
+  bin:
+    sass: sass.js
+  checksum: 60b8e6bd19e2b7099f052cfc60f3691492948ade94bbd943e7450167311318f11e1d76b7d937f8fa05368f28d423476c63112b3ff5adfe8841b1a03b9fe7afc1
+  languageName: node
+  linkType: hard
+
 "scheduler@npm:^0.23.0":
   version: 0.23.0
   resolution: "scheduler@npm:0.23.0"
@@ -3717,7 +3739,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map-js@npm:^1.0.2":
+"source-map-js@npm:>=0.6.2 <2.0.0, source-map-js@npm:^1.0.2":
   version: 1.0.2
   resolution: "source-map-js@npm:1.0.2"
   checksum: 4496d29f371909dbc27dfb302f31cadc70b6f1591b2b433337daf923fac30e9632523e169494b40d06b53228166a577875a3610bce3412de8bb600152f748a9c
@@ -3912,6 +3934,24 @@ __metadata:
     "@pkgr/utils": "npm:^2.3.1"
     tslib: "npm:^2.5.0"
   checksum: 4f8cad99ececb0f22d91780c9882d1ef51fd551051cbd53f4674876771007e3b0ed6adcf17622a9bca8f9f8b16f49d91c4cc37d25888bc9d7ab3470e496bc4a6
+  languageName: node
+  linkType: hard
+
+"tailwind-merge@npm:^1.10.0":
+  version: 1.12.0
+  resolution: "tailwind-merge@npm:1.12.0"
+  checksum: 6bf27035df18483655b12423116af1f2e4208f665c8a41d8f6fbcad9b72a58c2d490065b124bfc061a3367d7130637073a54adf4479330aebc32baaed190c36c
+  languageName: node
+  linkType: hard
+
+"tailwind-variants@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "tailwind-variants@npm:0.1.5"
+  dependencies:
+    tailwind-merge: "npm:^1.10.0"
+  peerDependencies:
+    tailwindcss: "*"
+  checksum: 786d451190b832b91bdcd1aabc1937e99a1e077dfdae06e019af39a71bcb7c7036f637582d3ddec4070300345e8991441e707c80d792816d8c4ea84f6d34e8a9
   languageName: node
   linkType: hard
 
