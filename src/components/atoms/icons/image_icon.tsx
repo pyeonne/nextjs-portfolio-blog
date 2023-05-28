@@ -28,30 +28,30 @@ export default function ImageIcon({
           transform="translate(4.071 10.749)"
           fill="none"
           stroke={fill}
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-miterlimit="10"
-          stroke-width="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeMiterlimit="10"
+          strokeWidth="1.5"
         />
         <path
           d="M3.115,1.558A1.558,1.558,0,1,1,1.557,0,1.558,1.558,0,0,1,3.115,1.558Z"
           transform="translate(5.024 5.547)"
           fill="none"
           stroke={fill}
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-miterlimit="10"
-          stroke-width="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeMiterlimit="10"
+          strokeWidth="1.5"
         />
         <path
           d="M0,9.25c0,6.937,2.313,9.25,9.25,9.25s9.25-2.313,9.25-9.25S16.187,0,9.25,0,0,2.313,0,9.25Z"
           transform="translate(0.75 0.75)"
           fill="none"
           stroke={fill}
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-miterlimit="10"
-          stroke-width="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeMiterlimit="10"
+          strokeWidth="1.5"
         />
       </g>
     </svg>
