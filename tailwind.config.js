@@ -14,9 +14,14 @@ module.exports = withTV({
         title: "var(--font-montserrat)",
       },
       fontSize: {
-        smaller: "var(--smaller-font-size)",
         biggest: "var(--biggest-font-size)",
         h1: "var(--h1-font-size)",
+        small: "var(--small-font-size)",
+        smaller: "var(--smaller-font-size)",
+        tiny: "var(--tiny-font-size)",
+      },
+      backgroundColor: {
+        container: "var(--container-color)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -46,6 +51,18 @@ module.exports = withTV({
       },
       zIndex: {
         1: "1",
+      },
+      animation: {
+        "bounce-skills": "bounce-skills .6s",
+      },
+      keyframes: {
+        "bounce-skills": {
+          "0%": { transform: "translate(0)" },
+          "20%": { transform: "translateY(-6px)" },
+          "40%": { transform: "translate(0)" },
+          "60%": { transform: "translateY(-3px)" },
+          "80%": { transform: "translate(0)" },
+        },
       },
     },
   },
