@@ -1,4 +1,5 @@
 import Home from "@/components/organisms/home";
+import Qualification from "@/components/organisms/qualification";
 import Skills from "@/components/organisms/skills";
 
 export default function Root() {
@@ -6,6 +7,7 @@ export default function Root() {
     <main className="main">
       <Home />
       <Skills />
+      <Qualification />
     </main>
   );
 }

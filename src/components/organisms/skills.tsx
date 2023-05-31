@@ -1,3 +1,5 @@
+import SectionSubtitle from "../atoms/section_subtitle";
+import SectionTitle from "../atoms/section_title";
 import SkillsContent from "../molecules/skills_content";
 
 const developer = [
@@ -59,8 +61,8 @@ const designer = [
 export default function Skills() {
   return (
     <section id="skills" className="section">
-      <h2 className="section__title">Skills</h2>
-      <span className="section__subtitle">My favorite skills</span>
+      <SectionTitle title="Skills" />
+      <SectionSubtitle subtitle="My favorite skills" />
       <div
         id="skills__container"
         className="section__border container grid gap-y-14"

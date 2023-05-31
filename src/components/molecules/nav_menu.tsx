@@ -8,7 +8,7 @@ import WorkIcon from "../atoms/icons/work_icon";
 import GameIcon from "../atoms/icons/game_icon";
 import StarIcon from "../atoms/icons/star_icon";
 import Link from "next/link";
-import NavItem from "./nav_item";
+import NavItem from "../atoms/nav_item";
 
 type Props = {
   showMenu: boolean;

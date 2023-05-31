@@ -16,6 +16,9 @@ module.exports = withTV({
       fontSize: {
         biggest: "var(--biggest-font-size)",
         h1: "var(--h1-font-size)",
+        h2: "var(--h2-font-size)",
+        h3: "var(--h3-font-size)",
+        normal: "var(--normal-font-size)",
         small: "var(--small-font-size)",
         smaller: "var(--smaller-font-size)",
         tiny: "var(--tiny-font-size)",

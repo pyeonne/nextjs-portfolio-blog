@@ -11,7 +11,7 @@ export default function NavItem({ href, icon, title }: Props) {
     <li key={href} id="nav-item">
       <Link
         href={href}
-        className="nav__link flex flex-col  items-center gap-y-1 text-smaller transition-color duration-400 hover:text-[var(--title-color)]"
+        className="nav__link flex flex-col items-center gap-y-1 text-smaller text-[var(--text-color-light)] transition-color duration-400 hover:text-[var(--title-color)]"
       >
         {icon} {title}
       </Link>
