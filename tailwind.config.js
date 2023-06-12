@@ -9,6 +9,10 @@ module.exports = withTV({
   ],
   theme: {
     extend: {
+      colors: {
+        "text-color-light": "var(--text-color-light)",
+        title: "var(--title-color)",
+      },
       fontFamily: {
         body: "var(--font-poppins)",
         title: "var(--font-montserrat)",
@@ -45,9 +49,12 @@ module.exports = withTV({
       },
       transitionDuration: {
         400: "400ms",
+        600: "600ms",
+        800: "800ms",
       },
       rotate: {
         15: "15deg",
+        360: "360deg",
       },
       borderWidth: {
         6: "6px",

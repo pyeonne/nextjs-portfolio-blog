@@ -157,6 +157,10 @@
   overflow: hidden; /* For animation */
 }
 
+#services__card:hover svg {
+  transform: rotateY(360deg);
+}
+
 /* Show menu */
 
 /* Change background header */
